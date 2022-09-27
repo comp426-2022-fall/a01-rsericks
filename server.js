@@ -13,7 +13,7 @@ const port = args.port || process.env.PORT || 3000
 // Use the documentation for the Node.js `fs` module. 
 // The function must read a file located at `./public/index.html` and do some stuff with it.
 // The stuff that should be inside this function is all below.
-const data = fs.readFile('./www/index.html','utf8',(err,data) =>{
+const data = fs.readFile('./public/index.html','utf8',(err,data) =>{
     
 
     // If there is an error, put it on the console error and return. 
@@ -33,7 +33,7 @@ const data = fs.readFile('./www/index.html','utf8',(err,data) =>{
     // 1. status code 200, 
     // 2. set a header with content type `text/html`, and 
     // 3. end with the data that you are reading in from ./public/index.html.
-    const server = http.createServer((req,res)=>{
+    const server = http.createServer((req, res)=>{
         res.statusCode = 200;
         res.setHeader('Content-Type','text/html')
         res.end(data)
