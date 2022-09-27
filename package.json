@@ -1,0 +1,22 @@
+{
+  "name": "rsericks-webserver",
+  "version": "1.0.0",
+  "description": "first try at webserver",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a01-rsericks.git"
+  },
+  "author": "rsericks",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a01-rsericks/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a01-rsericks#readme",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  }
+}
